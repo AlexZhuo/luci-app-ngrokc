@@ -1,0 +1,24 @@
+
+config ngrokc 'main'
+	option check_interval '0'
+
+config servers 'tunnel_phpor_me'
+	option host 'tunnel.phpor.me'
+	option port '4443'
+
+config servers 'gotunnel_org'
+	option host 'gotunnel.org'
+	option port '3334'
+
+config servers 'ngrok_cc'
+	option host 'server.ngrok.cc'
+	option port '4443'
+
+config tunnel 'tunnel1'
+	option type 'http'
+	option lport '80'
+	option enabled '0'
+	option server 'tunnel_phpor_me'
+	option custom_domain '0'
+	option dname 'openwrt'
+
