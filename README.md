@@ -33,6 +33,14 @@ forked from https://github.com/anti-gfw/packages/tree/master/luci/applications/l
    ```
 
 ---
+
+截图
+---
+![](https://github.com/AlexZhuo/BreakwallOpenWrt/raw/master/screenshots/ngrokc1.png)
+
+
+![](https://github.com/AlexZhuo/BreakwallOpenWrt/raw/master/screenshots/ngrokc2.png)
+
 [N]: http://www.right.com.cn/forum/thread-198649-1-1.html
 [M]: https://github.com/AlexZhuo/openwrt-ngrokc
 [S]: http://wiki.openwrt.org/doc/howto/obtain.firmware.sdk
