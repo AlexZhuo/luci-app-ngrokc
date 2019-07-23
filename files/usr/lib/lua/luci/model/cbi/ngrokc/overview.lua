@@ -71,8 +71,8 @@ server.template = "ngrokc/overview_value"
 server.rmempty = false
 function server.set_one(self, section)
 	local servername = self.map:get(section, "server") or ""
-	local host = UCI.get("ngrokc", servername, "host") or ""
-	local port = UCI.get("ngrokc", servername, "port") or ""
+	local host = UCI:get("ngrokc", servername, "host") or ""
+	local port = UCI:get("ngrokc", servername, "port") or ""
 	if servername ~= "" or host ~= "" or port ~= "" then
 		return host .. ":" .. port
 	else
@@ -98,7 +98,7 @@ url.rmempty = false
 function url.set_one(self, section)
 	local urlelement
 	local servername = self.map:get(section, "server") or ""
-	local host = UCI.get("ngrokc", servername, "host") or ""
+	local host = UCI:get("ngrokc", servername, "host") or ""
 	local tunneltype = self.map:get(section, "type") or ""
 	local dname = self.map:get(section, "dname") or ""
 	local cusdom = self.map:get(section, "custom_domain") or ""
